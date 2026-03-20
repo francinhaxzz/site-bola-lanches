@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bola Lanches | Pedidos Online</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Bola Lanches</h1>
+            <p>Unidade Várzea - O melhor do Açaí, Burger e Sushi em um só lugar!</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="sobre" class="secao-sobre">
+            <h2>Sobre Nós</h2>
+            <p>Bateu a fome e a dúvida do que pedir? Aqui no Bola você não precisa escolher entre as suas comidas favoritas. Trabalhamos com ingredientes frescos e selecionados para entregar a melhor experiência, seja no açaí geladinho, no hambúrguer suculento ou no japa caprichado!</p>
+        </section>
+
+        <section id="vitrine" class="secao-vitrine">
+            <h2>Destaques do Cardápio</h2>
+            <div class="grade-produtos">
+                
+                <article class="produto" data-preco="15.00">
+                    <div class="produto-imagem" style="background-image: url('https://i.pinimg.com/736x/df/f0/2f/dff02ffa7ef238966cc1573633b72125.jpg'); background-size: cover; background-position: center;"></div>
+                    <h3>Açaí Tradicional 500ml</h3>
+                    <p class="descricao">Açaí puro batido na hora. Acompanha leite em pó, granola e banana.</p>
+                    <p class="preco">R$ 15,00</p>
+                    <div class="controles">
+                        <button class="btn-menos" aria-label="Diminuir quantidade">-</button>
+                        <span class="quantidade">0</span>
+                        <button class="btn-mais" aria-label="Aumentar quantidade">+</button>
+                    </div>
+                </article>
+
+                <article class="produto" data-preco="34.90">
+                    <div class="produto-imagem" style="background-image: url('https://i.pinimg.com/474x/9f/62/b6/9f62b6fff06fe5e24554b271631f37cb--rodents-rats.jpg'); background-size: cover; background-position: center;"></div>
+                    <h3>Burg Classic</h3>
+                    <p class="descricao">Pão brioche, blend bovino 160g, queijo cheddar derretido, bacon crocante e maionese da casa.</p>
+                    <p class="preco">R$ 34,90</p>
+                    <div class="controles">
+                        <button class="btn-menos" aria-label="Diminuir quantidade">-</button>
+                        <span class="quantidade">0</span>
+                        <button class="btn-mais" aria-label="Aumentar quantidade">+</button>
+                    </div>
+                </article>
+
+                <article class="produto" data-preco="55.00">
+                    <div class="produto-imagem" style="background-image: url('https://i.pinimg.com/originals/82/8c/8f/828c8f06d7c8c66b67198aa7d71978ba.jpg'); background-size: cover; background-position: center;"></div>
+                    <h3>Combo Salmão (20 Peças)</h3>
+                    <p class="descricao">5 sashimis, 5 niguiris, 5 uramakis e 5 hossamakis. Acompanha shoyu e hashi.</p>
+                    <p class="preco">R$ 55,00</p>
+                    <div class="controles">
+                        <button class="btn-menos" aria-label="Diminuir quantidade">-</button>
+                        <span class="quantidade">0</span>
+                        <button class="btn-mais" aria-label="Aumentar quantidade">+</button>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <div class="barra-pedido">
+        <div class="container barra-conteudo">
+            <span class="texto-total">Total do Pedido:</span>
+            <span id="valor-total" class="valor-total">R$ 0,00</span>
+            <button class="btn-enviar" onclick="enviarPedido()">Pedir no WhatsApp</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Bola lanches. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
+
